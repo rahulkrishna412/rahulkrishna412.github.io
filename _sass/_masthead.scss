@@ -24,7 +24,6 @@
   }
 }
 .stage{
-    display: table;
     background: rgba(41, 128, 185,1.0);
     color: rgba(255, 255, 255, 0.6);
     width: 100%;
@@ -32,8 +31,7 @@
     text-align: center;
     background-size: 100%;
     .inside{
-        display: table-cell;
-        vertical-align: middle;
+        padding-top: 20vh;
     }
     h1 {
         font-size: 3rem;

@@ -2,7 +2,11 @@
 //
 // Styles for managing the structural hierarchy of the site.
 
-
+@media (min-width: 1200px){
+    .container {
+        width: 740px;
+    }
+}
 footer {
   margin-bottom: 2rem;
 }
