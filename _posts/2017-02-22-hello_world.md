@@ -1,10 +1,7 @@
 ---
 layout: post
-title: What's Jekyll?
+title: Hello World!
 ---
-
-# Hello World!
-
 > Where thou art there is love. -Emily Dickinson 
 
 www is a work of art, a magic that makes people fall in love with it. It has been a part of my life since I was first introduced to it. It was a humble beginning when my friend Rishav Sharma made me my orkut profile. It was long time ago.
