@@ -8,7 +8,6 @@ tagline:             Website designer and developer.
 url:                 http://www.rahulkrishna.xyz
 paginate:            1
 baseurl:             ""
-timezone:            Asia/Calcutta
 
 # Assets
 #
@@ -21,7 +20,7 @@ sass:
 author:
   name:              Rahul Krishna
   url:               https://twitter.com/_RahulKrishna
-  email:             rahul.krishna11@gmail.com
+  email:             markdotto@gmail.com
 
 # Custom vars
 version:             2.0.0
