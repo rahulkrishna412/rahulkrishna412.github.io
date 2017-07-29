@@ -1,0 +1,42 @@
+---
+layout: works
+title: Works
+---
+<section class="page-title-modern page-title-md-2">
+                <div class="container">
+                    <div class="page-center">
+                        <h3 class="text-white">Browse through some of my works!</h3>
+                        <p>Here are some works that I have done. </p>
+                        
+                    </div>
+                </div>
+            </section>
+
+<!-- Portfolio Style 3 -->
+            <section class="section-padding portfolio-2">
+                <div class="container">
+                    <!-- grid wrapper -->
+                    <ul class="grid grid-3 gutter grid-type-2">
+                        <!-- element -->
+                        {% for work in site.works %}
+                        <li class="grid-item">
+                            <div>
+                                <a href="{{ work.url }}">
+                                    <!-- image wrapper -->
+                                    <figure>
+                                        <div class="grid-img">
+                                            <img class="img-responsive" src="{{work.image_path}}" alt="">
+                                        </div>
+                                        <!-- image caption -->
+                                        <figcaption>
+                                            <span class="project">{{ work.title }}</span>
+                                            <span class="company">{{ work.type }}</span>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </div>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </section>

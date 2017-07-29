@@ -1,0 +1,44 @@
+---
+layout: works
+---
+<section class="section-padding content-block-5 section-top-margin">
+                <!-- image wrapper -->
+                <div class="img-container foo">
+                    <img class="img-responsive" src="{{ page.image_path }}" alt="">
+                </div>
+                <!-- main content -->
+                <div class="container">
+                    <div class="row">
+                        <div class="content-wrap">
+                            <!-- main heading -->
+                            <h3 class="font-w600 text-blue">{{ page.title }}</h3>
+                            <!-- sub-text -->
+                            <div class="subtext margin-top20 font-hind">
+                                
+                            </div>
+                            <!-- Tabs Navigation -->
+                        <ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
+                            <li class="active"><a href="#introduction" data-toggle="tab" aria-expanded="false">Introduction</a></li>
+                            <li class=""><a href="#tools" data-toggle="tab" aria-expanded="false">Tools Used</a></li>
+                            <li class=""><a href="#moreinfo" data-toggle="tab" aria-expanded="true">More Info</a></li>
+                        </ul>
+                        <!-- Tabs Content -->
+                        <div id="my-tab-content" class="tab-content">
+                            <div class="tab-pane active" id="introduction">
+                                {{ content }}
+                            </div>
+                            <div class="tab-pane" id="tools">
+                                <span class="subh-basic-dark">Softwares used</span>
+                                <p>{{page.softwares}}</p>
+                                <span class="subh-basic-dark">Technologies used</span>
+                                <p>{{page.technologies}}</p>
+                            </div>
+                            <div class="tab-pane" id="moreinfo">
+                                <p>Nothing to display.</p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+{% include cta1.html %}

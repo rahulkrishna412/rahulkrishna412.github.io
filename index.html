@@ -2,32 +2,100 @@
 layout: front
 title: Home
 ---
+<!-- Hero Header Style 12 -->
+            <section class="section-padding hero-header-12">
+                <div class="container">
+                    <!-- main content box -->
+                    <div class="content-box">
+                        {{ site.description }}
+                        <!-- mouse scroll animation -->
+                        <div class="mouse-wrapper">
+                            <a href="#portfolio" class="page-scroll mouse mouse-dark">
+                                <div class="wheel"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section-padding content-block-11">
+                <div class="container">
+                    <!-- main icon, heading and sub-text -->
+                    
+                    <!-- main wrapper -->
+                    <div class="all-details-wrapper row">
+                        <!-- feature -->
+                        <div class="col-md-3 col-sm-6 col-xs-8 text-center feature">
+                            <!-- icon -->
+                            <i class="ti-vector icon"></i>
+                            <!-- feature heading -->
+                            <span class="subh-basic-light">Corporate Identity</span>
+                            <!-- feature info -->
+                            <p class="feature-info">I create memorable and meaningful corporate identity because it represents everything your company stands for.</p>
+                        </div>
+                        <!-- feature -->
+                        <div class="col-md-3 col-sm-6 col-xs-8 text-center feature">
+                            <i class="ti-palette icon"></i>
+                            <span class="subh-basic-light">UI Design</span>
+                            <p class="feature-info">User Interace is how users feel about your app.I create content centered, modern designs for rich user interactions.</p>
+                        </div>
+                        <!-- feature -->
+                        <div class="col-md-3 col-sm-6 col-xs-8 text-center feature">
+                            <i class="ti-apple icon"></i>
+                            <span class="subh-basic-light">Web Development</span>
 
-<div class="posts">
-  {% for post in paginator.posts %}
-  <article class="post">
-    <h1 class="post-title">
-      <a href="{{ site.baseurl }}{{ post.url }}">
-        {{ post.title }}
-      </a>
-    </h1>
-
-    <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date_to_string }}</time>
-
-    {{ post.content }}
-  </article>
-  {% endfor %}
-</div>
-
-<div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ paginator.next_page_path | prepend: site.baseurl }}">Older</a>
-  {% else %}
-    <span class="pagination-item older">Older</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    <a class="pagination-item newer" href="{{ paginator.previous_page_path | prepend: site.baseurl }}">Newer</a>
-  {% else %}
-    <span class="pagination-item newer">Newer</span>
-  {% endif %}
-</div>
+                            <p class="feature-info">Responsive development will help make your website easily accessible across all devices.</p>
+                        </div>
+                        <!-- feature -->
+                        <div class="col-md-3 col-sm-6 col-xs-8 text-center feature">
+                            <i class="ti-control-forward icon"></i>
+                            <span class="subh-basic-light">Social Media Management</span>
+                            <p class="feature-info">It's important to keep your brand consistent and recognizable across all platforms.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- latest Projects -->
+            <section id="portfolio" class="portfolio-2 section-padding-zero">
+                <div class="container">
+                    <!-- grid wrapper -->
+                    <ul class="grid grid-3 gutter grid-type-2">
+                        {% for work in site.works %}
+                        <!-- element -->
+                        <li class="grid-item">
+                            <div>
+                                <a href="{{ work.url }}">
+                                    <!-- image wrapper -->
+                                    <figure>
+                                        <div class="grid-img">
+                                            <img class="img-responsive" src="{{work.image_path}}" alt="">
+                                        </div>
+                                        <!-- image caption -->
+                                        <figcaption>
+                                            <span class="project">{{ work.title }}</span>
+                                            <span class="company">{{ work.type }}</span>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </div>
+                        </li>
+                        {% endfor %}
+                        
+                    </ul>
+                </div>
+            </section>
+            
+            
+            <!-- Promo Style 6 -->
+            <section class="section-padding-small promo-6">
+                <div class="container">
+                    <div class="center-block-1">
+                        <!-- main heading -->
+                        <h3 class="letter-spacing0">Its the design with which we can stand out in crowd</h3>
+                        <!-- sub-text -->
+                        <p class="text-uppercase letter-spacing1">Let's meet higher standards</p>
+                        <!-- button -->
+                        <a href="#0" class="bttn bttn-small bttn-scale bttn75 margin-top20 letter-spacing2">Discuss a project</a>
+                    </div>
+                </div>
+            </section>

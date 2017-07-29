@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% include meta.html %}
+  {% include stylesheets.html %}
+<link rel="stylesheet" href="{{ site.baseurl }}/public/css/blog.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/styles.css">
+
+  <body id="top">
+     <div id="preloader">
+            <div id="status">
+                <div data-loader="circle-side"></div>
+            </div>
+        </div> 
+    <main>
+        {{ content }}
+    </main>
+      {% include cta2.html %}
+     {% include footer.html %}
+    
+    {% include navbar.html %}
+    {% include scripts.html %}
+      <script>
+            // masonry grid
+            var $grid = $('.blog-card-small .blog-wrapper').masonry({
+                itemSelector: '.grid-item'
+            });
+            $grid.imagesLoaded().progress(function () {
+                $grid.masonry('layout');
+            });
+        </script>    
+    
+  </body>
+</html>

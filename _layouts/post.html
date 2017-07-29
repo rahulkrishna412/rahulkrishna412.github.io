@@ -1,25 +1,30 @@
 ---
-layout: default
+layout: blogs
 ---
 
-<article class="post">
-  <h1 class="post-title">{{ page.title }}</h1>
-  <time datetime="{{ page.date | date_to_xmlschema }}" class="post-date">{{ page.date | date_to_string }}</time>
-  {{ content }}
-</article>
+<section class="blog-post-title bg-cover-simple">
+                <div class="container">
+                    <div class="title-box">
+                        <h3 class="text-white">{{ page.title }}</h3>
+                        <p>{{ page.abstract }}</p>
+                        <span class="article-by"><time datetime="{{ page.date | date_to_xmlschema }}" class="post-date">{{ page.date | date_to_string }}</time></span>
+                    </div>
+                </div>
+</section>
+<!-- Main Post -->
+            <section class="blog-single-page section-padding-small">
+                <div class="container">
+                    <div class="col-md-8 col-sm-10 just-center no-padding">
+                        {{ content }}
+                        <!-- Pagination style 3 -->
+                        <div class="pagination">
+                            <ul class="mod-pagination move-buttons custom-icons">
+                                <li class="button"><a href="#0">Prev Article</a></li>
+                                <li class="button"><a href="#0">Next Article</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-{% if site.related_posts != empty %}
-<aside class="related">
-  <h3>Related posts</h3>
-  <ul class="related-posts">
-    {% for post in site.related_posts limit:3 %}
-      <li>
-        <a href="{{ site.baseurl }}{{ post.url }}">
-          {{ post.title }}
-          <small><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</time></small>
-        </a>
-      </li>
-    {% endfor %}
-  </ul>
-</aside>
-{% endif %}
+

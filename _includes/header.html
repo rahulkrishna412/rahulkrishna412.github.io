@@ -1,0 +1,30 @@
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>
+            {% if page.title == "Home" %}
+              {{ site.title }} &middot; {{ site.tagline }}
+            {% else %}
+              {{ page.title }} &middot; {{ site.title }}
+            {% endif %}
+        </title>
+        <meta name="description" content="Modular - The ultimate multipurpose responsive HTML5 Template">
+        <meta name="keywords" content="modular, bootstrap, business, corporate, creative, multipurpose, responsive, agency, startup">
+        
+        <!-- Favicons - add your favicons here
+            ============================================= -->
+        <link rel="shortcut icon" href="{{ site.baseurl }}/public/favicon-32x32.png" type="image/x-icon">
+        <link rel="apple-touch-icon" sizes="57x57" href="{{ site.baseurl }}/public/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="{{ site.baseurl }}/public/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="{{ site.baseurl }}/public/apple-icon-144x144.png">
+        
+        <!-- CSS Stylesheets 
+            ============================================= -->
+        <!-- CSS Stylesheets 
+            ============================================= -->
+        {% include stylesheets.html %}
+        <link rel="stylesheet" href="public/css/owl-carousel.css">
+        <link rel="stylesheet" href="public/css/demo/demo11.css">
+        <link rel="stylesheet" href="{{ site.baseurl }}/styles.css">
+</head>

@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Hello World!
+topic: Announcement
+abstract: www is a work of art, a magic that makes people fall in love with it. It has been a part of my life since I was first introduced to it.
 ---
 > Where thou art there is love. -Emily Dickinson 
 

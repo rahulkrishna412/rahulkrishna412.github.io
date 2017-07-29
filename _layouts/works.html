@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% include meta.html %}
+  {% include stylesheets.html %}
+<link rel="stylesheet" href="{{ site.baseurl }}/styles.css">
+
+  <body id="top">
+     <div id="preloader">
+            <div id="status">
+                <div data-loader="circle-side"></div>
+            </div>
+        </div> 
+    <main>
+        {{ content }}
+    </main>
+      {% include cta1.html %}
+     {% include footer.html %}
+    
+    {% include navbar.html %}
+    {% include scripts.html %}
+      <script src="{{ site.baseurl }}/public/js/bootstrap.min.js"></script>
+      <script>
+            var $grid = $('.portfolio-2 .grid').masonry({
+                itemSelector: '.grid-item'
+            });
+            $grid.imagesLoaded().progress(function () {
+                $grid.masonry('layout');
+            });
+        </script>
+ 
+    
+  </body>
+</html>

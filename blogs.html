@@ -1,0 +1,62 @@
+---
+layout: blogs
+title: Blogs
+---
+
+<!-- Blog Small Cards -->
+            <section class="blog-card-small section-top-margin border-bottom-light">
+                <div class="container">
+                    <div class="row">
+                        <!-- Blog Wrapper -->
+                        <div class="blog-wrapper">
+                            <!-- blog post -->
+                            {% for post in site.posts %}
+                            <div class="col-md-4 col-sm-6 grid-item">
+                                <a href="{{ site.baseurl }}{{ post.url }}">
+                                    <!-- blog card wrapper -->
+                                    <div class="blog-post">
+                                        <!-- post image -->
+                                        <div class="blog-img">
+                                            <img class="img-responsive" src="{{ site.baseurl }}/public/img/blog/card_small_bg1.jpg" alt="">
+                                        </div>
+                                        <!-- post content -->
+                                        <div class="blog-content">
+                                            <span class="subh-basic-dark">{{ post.topic }}</span>
+                                            <h6>{{ post.title }}</h6>
+                                            <span class="article-by"><time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date_to_string }}</time></span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            {% endfor %}
+                        </div>
+                        <div class="col-xs-12">
+                            <!-- Pagination style 3 -->
+                            <div class="pagination">
+                                <ul class="mod-pagination move-buttons custom-icons">
+                                    <li class="button">
+                                        {% if paginator.next_page %}
+                                        <a class="{{ paginator.next_page_path | prepend: site.baseurl }}" href="#0">Prev</a>
+                                        {% else %}
+                                        <a class="disabled" href="#">Prev</a>
+                                        {% endif %}
+                                    </li>
+                                    <li><a class="current" href="#0">1</a></li>
+                                    <li><a href="#0">2</a></li>
+                                    <li><a href="#0">3</a></li>
+                                    <li><a href="#0">4</a></li>
+                                    <li><span>...</span></li>
+                                    <li><a href="#0">20</a></li>
+                                    <li class="button">
+                                        {% if paginator.previous_page %}
+                                        <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}">Next</a>
+                                        {% else %}
+                                        <a class="disabled" href="#">Next</a>
+                                        {% endif %}
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>

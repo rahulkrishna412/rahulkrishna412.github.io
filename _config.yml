@@ -3,11 +3,16 @@ permalink:           pretty
 
 # Setup
 title:               Rahul Krishna
-description:         A good design should makes our life easy instead of complicating it. It coupled with web technology has the ability to create better world for us. I explore these possibilities by designing user interfaces and writing web applications that are easy to use. <br/><a href="#" class="btn btn-fancy">Discuss a Project</a><a href="#" class="btn btn-fancy">Read blog</a>  
+description:         <h3 class="">Hello! I'm Rahul Krishna.</h3><p>I create beautiful  & functional websites, User interfaces and Corporate identity for small businesses.</p>
 tagline:             Website designer and developer.
 url:                 http://www.rahulkrishna.xyz
 paginate:            1
 baseurl:             ""
+
+#collections
+collections:
+  works:
+    output: true
 
 # Assets
 #

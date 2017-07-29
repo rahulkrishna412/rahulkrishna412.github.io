@@ -1,23 +1,51 @@
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="{{ site.baseurl }}/">{{ site.title }}</a>
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">About</a></li>
-        <li><a href="#">contact</a></li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
+<!-- Navigation goes here 
+            ============================================= -->
+        <nav id="main-nav" class="white-nav" role="navigation">
+            <!-- logo -->
+            <a href="{{ site.baseurl }}" class="brand-name">
+            <img class="initial-logo" src="{{ site.baseurl }}/public/img/other/logo_big_dark.svg" width="130" alt="">
+            <img class="scroll-logo" src="{{ site.baseurl }}/public/img/other/logo_big_dark.svg" width="130" alt="">
+            </a>
+            <!-- Menu Button -->
+            <a href="#0" class="toggle-bttn">
+            <span></span>
+            </a>
+            <!-- Main Navigation Menu -->
+            <ul id="main-menu" class="sm sm-clean">
+                {% if page.title != "Home" %}
+                <li>
+                    <a href="{{ site.baseurl }}"> Go Home</a>
+                    
+                </li>
+                {% endif %}
+                <li>
+                    <a href="{{ site.baseurl }}/about">Know About me</a>
+                    
+                </li>
+                <li>
+                    <a href="{{ site.baseurl }}/blogs">Read my Blogs</a>
+                    
+                </li>
+                <li>
+                    <a href="{{ site.baseurl }}/works">See my Works</a>
+                    
+                </li>
+                
+            </ul>
+            <!-- search and shopping cart -->
+            <div class="other-tools">
+                <a href="#0" class="search"><span class="ti-search"></span></a>
+            </div>
+            <!-- search field -->
+            <div class="search-field-wrapper">
+                <div class="container">
+                    <form class="search-form clearfix" action="" method="get">
+                        <div>
+                            <span class="ti-search search-form-icon"></span>
+                            <input id="search" type="text" name="q" value="">
+                            <label for="search">Search here & hit enter...</label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </nav>
