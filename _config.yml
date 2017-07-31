@@ -7,7 +7,7 @@ description:         <h3 class="">Hello! I'm Rahul Krishna.</h3><p>I create beau
 tagline:             Website designer and developer.
 url:                 http://www.rahulkrishna.xyz
 paginate:            1
-baseurl:             "http://www.rahulkrishna.xyz"
+baseurl:             ""
 
 #collections
 collections:
