@@ -2,11 +2,21 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>
-            {% if page.title == "Home" %}
-              {{ site.title }} &middot; {{ site.tagline }}
-            {% else %}
-              {{ page.title }} &middot; {{ site.title }}
-            {% endif %}
+         {{ page.title }} &middot; {{ site.title }}
         </title>
-        <meta name="description" content="Modular - The ultimate multipurpose responsive HTML5 Template">
+        <meta name="description" content="{{page.abstract}}">
         <meta name="keywords" content="modular, bootstrap, business, corporate, creative, multipurpose, responsive, agency, startup">
+
+    <!-- You can use Open Graph tags to customize link previews.
+    Learn more: https://developers.facebook.com/docs/sharing/webmasters -->
+  <meta property="og:url"           content="{{page.url}}" />
+  <meta property="og:type"          content="website" />
+  <meta property="og:title"         content="{{page.title}}" />
+  <meta property="og:description"   content="{{page.abstract}}" />
+    <meta property="og:image"         content="{{ site.baseurl }}/public/img/og/rahulkrishna_og.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  <meta property="og:image"         content="{{ site.baseurl }}/public/img/blog/{{page.thumb}}" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />

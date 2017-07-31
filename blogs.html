@@ -17,12 +17,18 @@ title: Blogs
                                     <div class="blog-post">
                                         <!-- post image -->
                                         <div class="blog-img">
-                                            <img class="img-responsive" src="{{ site.baseurl }}/public/img/blog/card_small_bg1.jpg" alt="">
+                                            {% if post.thumb == null %}
+                                            <img class="img-responsive" src="{{ site.baseurl }}/public/img/blog/thumb_default.jpg" alt="">
+                                                                
+                                            {% else %}
+                                            <img class="img-responsive" src="{{ site.baseurl }}/public/img/blog/{{post.thumb}}" alt="">
+                                            {% endif %}
                                         </div>
                                         <!-- post content -->
                                         <div class="blog-content">
                                             <span class="subh-basic-dark">{{ post.topic }}</span>
                                             <h6>{{ post.title }}</h6>
+                                            <p>{{ post.abstract }}</p>
                                             <span class="article-by"><time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date_to_string }}</time></span>
                                         </div>
                                     </div>

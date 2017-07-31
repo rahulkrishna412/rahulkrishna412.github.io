@@ -26,5 +26,27 @@ layout: blogs
                     </div>
                 </div>
             </section>
-
-
+<section class="blog-comment section-padding-small">
+                <div class="container">
+                    <h6 class="text-center font-w600">Share this article</h6>
+                    <!-- Social Share -->
+                    <div class="social-share text-center">
+                        <a class="twitter-share-button"
+  href="https://twitter.com/intent/tweet?text={{post.title}}" data-size="large">
+Tweet</a>
+                        <!-- Your share button code -->
+  <div class="fb-share-button" 
+    data-href="{{ site.baseurl }}{{page.url}}" 
+    data-layout="button_count">
+  </div>
+                        <a href="#0" class="bttn-scale gplus"><span class="fa fa-google-plus"></span>Google</a>
+                    </div>
+                    <div class="col-md-8 col-sm-10 just-center no-padding">
+                        <div class="comments-section">
+                            {% include disqus.html %}
+                               
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
