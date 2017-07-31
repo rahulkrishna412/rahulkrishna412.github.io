@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 5 Reasons why you need a website
+categories: Website Development
 topic: Announcement
 thumb: 5_reasons_why_you_need_a_website_thumb.jpg
 abstract: Website is a basic necessity for any business - Just like food, cloth and shelter for normal human being. Why? Read this article to find out.
@@ -8,8 +9,8 @@ abstract: Website is a basic necessity for any business - Just like food, cloth 
 There are so many people you will meet who will motivate you, urge you and even persuade you to get a website. A couple of Google searches and you will start viewing advertisements about it - everywhere, and marketing people hunting you down. It can get frustrating! So, this question will definitely come to your mind - Why should I have a website?  Do I really need it? Well, a simple answer to the question is - Yes, you need it. Because..
 
 ## #5 You’ll show up in Google search results.
-Everyone has got a nice smart phone with Internet connection in it. In this busy world, expecting someone to come to your office by looking at your address in your visiting card seems far fetched. Most often than not, they will search for you - online. If you haven't got a website you are in bad luck, because they won't find you. When won't find you, your credibility will take a deep plunge.
-#4 A website builds credibility.
+Everyone has got a nice smart phone with Internet connection in it. In this busy world, expecting someone to come to your office by looking at your address in your visiting card seems far fetched. Most often than not, they will search for you - online. If you haven't got a website you are in bad luck, because they won't find you. When they won't find you, your credibility will take a deep plunge.
+## #4 A website builds credibility.
 When people discover that you have a website, they perceive you as a company that is serious about business. If you have got a great professional looking website with up-to-date informations, your potential customer will feel assured and satisfied about your business. 
 
 ## #3 A website sells your products/services online 24/7.
