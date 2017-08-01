@@ -2,16 +2,22 @@
 layout: blogs
 ---
 
-<section class="blog-post-title bg-cover-simple">
+<section class="blog-post-title bg-cover-simple" style="
+                {% if page.cover == null %}
+background-image:url(http://res.cloudinary.com/rahulkrishna/image/upload/q_100/v1501565265/bg018_rbqmtp.jpg);
+                {% else %}                                    
+                 background-image:linear-gradient(to right, rgba(75, 108, 183, 0.65), rgba(24, 40, 72, 0.8)), url({{page.cover}});  {% endif %}                                     ">
                 <div class="container">
                     <div class="title-box">
                         <h3 class="text-white">{{ page.title }}</h3>
                         <p>{{ page.abstract }}</p>
                         <span class="article-by"><time datetime="{{ page.date | date_to_xmlschema }}" class="post-date">{{ page.date | date_to_string }}</time></span>
+                        
                     </div>
                 </div>
 </section>
 <!-- Main Post -->
+{% include socialshare.html %}
             <section class="blog-single-page section-padding-small">
                 <div class="container">
                     <div class="col-md-8 col-sm-10 just-center no-padding">
@@ -31,15 +37,9 @@ layout: blogs
                     <h6 class="text-center font-w600">Share this article</h6>
                     <!-- Social Share -->
                     <div class="social-share text-center">
-                        <a class="twitter-share-button"
-  href="https://twitter.com/intent/tweet?text={{post.title}}" data-size="large">
-Tweet</a>
-                        <!-- Your share button code -->
-  <div class="fb-share-button" 
-    data-href="{{ site.baseurl }}{{page.url}}" 
-    data-layout="button_count">
-  </div>
-                        <a href="#0" class="bttn-scale gplus"><span class="fa fa-google-plus"></span>Google</a>
+                        <a href="https://twitter.com/share?url={{page.url}}" target="_blank" onclick="return OpenPopupCenter(this.href, 'Facebook', 640, 300);"  class="bttn-scale twitter"><span class="fa fa-twitter"></span>Twitter</a>
+                        <a href="https://www.facebook.com/sharer/sharer.php?u={{page.url}}" target="_blank" onclick="return OpenPopupCenter(this.href, 'Facebook', 640, 300);" class="bttn-scale facebook"><span class="fa fa-facebook"></span>Facebook</a>
+                        <a href="https://plus.google.com/share?url={{page.url}}" target="_blank" onclick="return OpenPopupCenter(this.href, 'Facebook', 640, 300);" class="bttn-scale gplus"><span class="fa fa-google-plus"></span>Google</a>
                     </div>
                     <div class="col-md-8 col-sm-10 just-center no-padding">
                         <div class="comments-section">

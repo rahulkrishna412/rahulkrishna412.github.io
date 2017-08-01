@@ -2,24 +2,19 @@
 layout: works
 title: Works
 ---
-<section class="page-title-modern page-title-md-2">
-                <div class="container">
-                    <div class="page-center">
-                        <h3 class="text-white">Browse through some of my works!</h3>
-                        <p>Here are some works that I have done. </p>
-                        
-                    </div>
-                </div>
-            </section>
-
 <!-- Portfolio Style 3 -->
             <section class="section-padding portfolio-2">
                 <div class="container">
+                    <div class="btn-group filter-button-group nav nav-tabs center-block" data-tabs="tabs">
+                            <button type="button" class="btn btn-default btn-lg" data-filter="*">Show all</button>
+                            <button type="button" class="btn btn-default btn-lg" data-filter=".logo">Logo</button>
+                            <button type="button" class="btn btn-default btn-lg" data-filter=".website">Website</button>
+                    </div>
                     <!-- grid wrapper -->
                     <ul class="grid grid-3 gutter grid-type-2">
                         <!-- element -->
                         {% for work in site.works %}
-                        <li class="grid-item">
+                        <li class="grid-item {{work.type}}">
                             <div>
                                 <a href="{{ work.url }}">
                                     <!-- image wrapper -->

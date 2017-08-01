@@ -1,5 +1,5 @@
 # Permalinks
-permalink:           pretty
+permalink:           /:categories/:title/
 
 # Setup
 title:               Rahul Krishna
@@ -8,6 +8,8 @@ tagline:             Website designer and developer.
 url:                 http://www.rahulkrishna.xyz
 paginate:            1
 baseurl:             "http://www.rahulkrishna.xyz"
+logo:             http://res.cloudinary.com/rahulkrishna/image/upload/q_100/v1501565421/rahulkrishna.xyz/logo_big_dark_gtpaof.png
+icon:                http://res.cloudinary.com/rahulkrishna/image/upload/v1501565421/rahulkrishna.xyz/logo64_dark_sggjjk.png
 
 #collections
 collections:

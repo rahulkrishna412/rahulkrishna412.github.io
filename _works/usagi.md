@@ -2,8 +2,8 @@
 layout: work
 title: Usagi
 link: www.usagi.com
-image_path: ../../public/projects/logo/usagi.jpg
-type: Corporate Identity
+image_path: http://i.imgur.com/9I6DwZA.jpg
+type: logo
 softwares: Adobe Illustrator
 technologies: SVG
 ---

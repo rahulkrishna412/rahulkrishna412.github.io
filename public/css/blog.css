@@ -444,7 +444,7 @@ Version: 2.0 - blog stylesheet
 05. Blog Single Page
  ---------------------------------*/
 .blog-post-title {
-    background: #111111 url(../img/bg/bg018.jpg);
+    background-color: #111111;
     min-height: 100px;
     padding: 170px 0px 100px;
 }
@@ -467,7 +467,7 @@ only screen and (min-device-pixel-ratio: 1.5) {
     line-height: 1.3em;
     font-size: 20px;
     margin: 20px 0px 0px;
-    color: #CCCCCC;
+    color: #fff;
 }
 @media only screen and (max-width: 991px) {
     .blog-post-title {
@@ -651,4 +651,15 @@ only screen and (min-device-pixel-ratio: 1.5) {
 .comment-form textarea:focus {
     background: #FFFFFF;
     border-color: #CCCCCC;
+}
+.socialshare.affix-top {
+    top: 548px;
+    position: relative;
+    left: 100px;
+    width: 263px;
+}
+.socialshare.affix {
+    top: 548px;
+    left: 100px;
+    width: 263px;
 }

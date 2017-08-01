@@ -18,13 +18,19 @@
     
     {% include navbar.html %}
     {% include scripts.html %}
-      <script src="{{ site.baseurl }}/public/js/bootstrap.min.js"></script>
+      
+      <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
       <script>
-            var $grid = $('.portfolio-2 .grid').masonry({
+            var $grid = $('.portfolio-2 .grid').isotope({
                 itemSelector: '.grid-item'
             });
+            // filter items on button click
+            $('.filter-button-group').on( 'click', 'button', function() {
+              var filterValue = $(this).attr('data-filter');
+              $grid.isotope({ filter: filterValue });
+            });
             $grid.imagesLoaded().progress(function () {
-                $grid.masonry('layout');
+                $grid.isotope('layout');
             });
         </script>
  

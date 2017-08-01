@@ -1,9 +1,10 @@
 ---
 layout: post
 title: 5 Reasons why you need a website
-categories: Website Development
+categories: website-development
 topic: Announcement
 thumb: 5_reasons_why_you_need_a_website_thumb.jpg
+cover: http://res.cloudinary.com/rahulkrishna/image/upload/c_crop,g_center,h_1043,w_1600/v1501567179/rahulkrishna.xyz/5_reasons.jpg
 abstract: Website is a basic necessity for any business - Just like food, cloth and shelter for normal human being. Why? Read this article to find out.
 ---
 There are so many people you will meet who will motivate you, urge you and even persuade you to get a website. A couple of Google searches and you will start viewing advertisements about it - everywhere, and marketing people hunting you down. It can get frustrating! So, this question will definitely come to your mind - Why should I have a website?  Do I really need it? Well, a simple answer to the question is - Yes, you need it. Because..

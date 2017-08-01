@@ -2,8 +2,8 @@
 layout: work
 title: Coreen
 link: www.aridai.com
-image_path: ../../public/projects/logo/coreen.jpg
-type: Corporate Identity
+image_path: http://i.imgur.com/4ltlAoe.jpg
+type: logo
 softwares: Adobe Illustrator
 technologies: SVG
 ---

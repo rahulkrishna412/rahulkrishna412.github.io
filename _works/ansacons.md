@@ -2,8 +2,8 @@
 layout: work
 title: Ansacons
 link: www.ansacon.com
-image_path: ../../public/projects/website/ansacon.png
-type: Website design
+image_path: http://i.imgur.com/hPJNlT9.png
+type: website
 softwares: Photoshop, Brackets
 technologies: HTML5, CSS3, Bootstrap, AngularJS
 ---

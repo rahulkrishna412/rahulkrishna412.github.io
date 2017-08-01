@@ -2,8 +2,8 @@
 layout: work
 title: Brava
 link: www.brava.com
-image_path: ../../public/projects/website/brava.png
-type: Website design
+image_path: http://i.imgur.com/JbaggrF.png
+type: website
 softwares: Adobe Photoshop, Brackets
 technologies: Bootstrap, AngularJS, Wordpress
 ---

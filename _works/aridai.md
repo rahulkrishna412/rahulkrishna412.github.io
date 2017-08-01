@@ -2,8 +2,8 @@
 layout: work
 title: Aridai
 link: www.aridai.com
-image_path: ../../public/projects/logo/aridai.jpg
-type: Corporate Identity
+image_path: http://i.imgur.com/XOk6qpz.jpg
+type: logo
 softwares: Adobe Illustrator
 technologies: SVG
 ---
